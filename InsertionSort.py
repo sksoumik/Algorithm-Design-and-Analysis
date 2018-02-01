@@ -1,4 +1,7 @@
-# Insertion Sort Time complexity: O(n**n)
+# Insertion Sort Time complexity: Worst Case & Average Case: O(n**n)
+# Insertion Sort Time complexity: Best Case: O(n)
+
+
 def insertionSort(arr):
     # Traverse through 1 to len(arr)
     for i in range(1, len(arr)):
