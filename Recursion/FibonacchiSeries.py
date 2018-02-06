@@ -9,6 +9,7 @@ def fibonacci(n):
 
 
 n = int(input("Enter how many numbers you want to print:"))
+
 print("Fibonacci sequence:")
 for i in range(n):
     print(fibonacci(i), end='  ')
