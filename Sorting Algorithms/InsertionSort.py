@@ -1,21 +1,18 @@
 # Insertion Sort Time complexity: Worst Case & Average Case: O(n**n)
-# Insertion Sort Time complexity: Best Case: O(n)
+# Insertion Sort Time complexity: Best Case: O(n) when the list is already sorted
 
 
-def insertionSort(arr):
-    # Traverse through 1 to len(arr)
-    for i in range(1, len(arr)):
+def insertionSort(alist):
+    for i in range(1, len(alist)):
+        value = alist[i]  # Value is items
+        position = i
+        while position > 0 and alist[position - 1] > value:
+            alist[position] = alist[position - 1]
+            position = position - 1  # Position is also index position
 
-        key = arr[i]
-
-        j = i - 1
-        while j >= 0 and key < arr[j]:
-            arr[j + 1] = arr[j]
-            j -= 1
-        arr[j + 1] = key
+        alist[position] = value
 
 
-arr = [12, 11, 13, 5, 6]
-insertionSort(arr)
-print("Sorted array is:")
-print(arr)
+alist = [2, 3, 1, 4, 6, 5]
+insertionSort(alist)
+print(alist)
