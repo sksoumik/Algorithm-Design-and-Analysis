@@ -1,36 +1,32 @@
 def partition(arr, low, high):
-    i = (low - 1)  # index of smaller element
-    pivot = arr[high]  # pivot
-
-    for j in range(low, high):
-
-        # If current element is smaller than or
-        # equal to pivot
+    i = (low -1)
+    pivot = arr[high]
+    for j in range(low, high ):
         if arr[j] <= pivot:
-            # increment index of smaller element
             i = i + 1
-            arr[i], arr[j] = arr[j], arr[i]
+            arr[i] ,arr[j] = arr[j], arr[i]
+        else:
+            pass
 
-    arr[i + 1], arr[high] = arr[high], arr[i + 1]
-    return (i + 1)
+    arr[i+1], arr[high] = arr[high], arr[i+1]
+    return (i+1)
 
-# low  --> Starting index,
-# high  --> Ending index
-
-# Function to do Quick sort
-def quickSort(arr, low, high):
+def quicksort(arr, low, high):
     if low < high:
-        # pi is partitioning index
-        pi = partition(arr, low, high)
 
-        quickSort(arr, low, pi - 1)
-        quickSort(arr, pi + 1, high)
+        split_point = partition(arr, low, high)
+
+        quicksort(arr, low, split_point-1)
+        quicksort(arr, split_point+1, high)
 
 
-# Driver code to test above
-arr = [10, 7, 8, 9, 1, 5]
+# Driver program
+arr = [10,30,20,0,40,50]
 n = len(arr)
-quickSort(arr, 0, n - 1)
-print("Sorted array is:")
-for i in range(n):
-    print("%d" % arr[i])
+quicksort(arr, 0, n-1)
+print("Sorted Array after Quick Sort is: ")
+for x in range(n):
+    print("%d" %arr[x], end="  ")
+
+
+
