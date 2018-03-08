@@ -12,9 +12,9 @@ def mergeSort(alist):
         print("RightHalf ", righthalf)
 
 
-        i = 0
-        j = 0
-        k = 0
+        i = 0 # for left half
+        j = 0 # for right half
+        k = 0 # original array
 
         while i < len(lefthalf) and j < len(righthalf):
             if lefthalf[i] < righthalf[j]:
