@@ -13,3 +13,9 @@
 - [Fibonacci : top-down-memoization approach](https://github.com/sksoumik/Algorithm-Design-and-Analysis/blob/master/Dynamic%20Programming/FibonnaciMemoization.py)
 - [Knapsack](https://github.com/sksoumik/Algorithm-Design-and-Analysis/blob/master/Dynamic%20Programming/Knapsack.py)
 - [Rod cutting - DP ](https://github.com/sksoumik/Algorithm-Design-and-Analysis/blob/master/Dynamic%20Programming/RodCutting.py)
+
+
+----
+### Greedy Algorithms
+- [Activity Selection Problem](https://github.com/sksoumik/Algorithm-Design-and-Analysis/blob/master/Greedy%20Algorithms/ActivitySelectionProblem.py)
+- [Huffman Code](https://github.com/sksoumik/Algorithm-Design-and-Analysis/blob/master/Greedy%20Algorithms/Huffman%20Code.py)
